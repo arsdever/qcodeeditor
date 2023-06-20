@@ -1,5 +1,7 @@
-set(HEADERS qcodeeditor.hpp)
-set(SOURCES qcodeeditor.cpp)
+set(CMAKE_AUTOMOC ON)
+
+set(HEADERS qcodeeditor.hpp qcodeeditor_line_numbers_area.hpp)
+set(SOURCES qcodeeditor.cpp qcodeeditor_line_numbers_area.cpp)
 
 add_library(qcodeeditor STATIC ${HEADERS} ${SOURCES})
 target_include_directories(qcodeeditor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
