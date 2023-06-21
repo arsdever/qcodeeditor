@@ -70,3 +70,9 @@ void QCodeEditor::resizeEvent(QResizeEvent* event)
         cr.left(), cr.top(), _lineNumbersArea->sizeHint().width(), cr.height()
     ));
 }
+
+void QCodeEditor::scrollContentsBy(int dx, int dy)
+{
+    QTextEdit::scrollContentsBy(dx, dy);
+    _lineNumbersArea->scroll(dx, dy);
+}

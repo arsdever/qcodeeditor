@@ -17,6 +17,7 @@ public:
 
 protected:
     void resizeEvent(QResizeEvent* event) override;
+    void scrollContentsBy(int dx, int dy) override;
 
 private:
     QCodeEditorLineNumbersArea* _lineNumbersArea = nullptr;
