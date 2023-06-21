@@ -1,5 +1,5 @@
-set(HEADERS qcodeeditor.hpp)
-set(SOURCES qcodeeditor.cpp)
+set(HEADERS qcodeeditor.hpp qsyntax_highlighter.hpp)
+set(SOURCES qcodeeditor.cpp qsyntax_highlighter.cpp)
 
 add_library(qcodeeditor STATIC ${HEADERS} ${SOURCES})
 target_include_directories(qcodeeditor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
