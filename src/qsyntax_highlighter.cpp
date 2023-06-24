@@ -8,3 +8,9 @@ QSyntaxHighlighter::QSyntaxHighlighter(QObject* parent)
 QSyntaxHighlighter::~QSyntaxHighlighter()
 {
 }
+
+void QSyntaxHighlighter::parse(std::string_view text)
+{
+}
+
+

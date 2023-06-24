@@ -1,3 +1,5 @@
+add_subdirectory(syntaxer)
+
 set(HEADERS qcodeeditor.hpp qsyntax_highlighter.hpp)
 set(SOURCES qcodeeditor.cpp qsyntax_highlighter.cpp)
 
